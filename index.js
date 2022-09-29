@@ -83,27 +83,6 @@ function notWorking(){
         alert("This feature is unavailable at the moment.");
 }
 
-// Image Carousel 
-var i = 0;
-var images = [];
-var time = 5000;
-
-images[0] = 'images/1.webp';
-images[1] = 'images/2.webp';
-images[2] = 'images/3.webp';
-
-function changeImg(){
-    document.slide.src = images[i];
-
-    if(i < images.length - 1){i++;}
-    else{i = 0;}
-
-    setTimeout('changeImg()', time);
-}
-
-window.onload = changeImg();
-
-
 // Dark Mode
 
 function darkMode() {
@@ -114,7 +93,6 @@ function darkMode() {
     element.classList.toggle("dark-mode");
     header.classList.toggle("dark-mode");
     footer.classList.toggle("dark-mode");
-
 
     var content = document.getElementById("container");
     content.classList.toggle("dark-cont");
