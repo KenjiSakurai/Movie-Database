@@ -5,7 +5,6 @@ let inforating = document.querySelector(".inforating");
 let infotitle = document.querySelector(".infotitle");
 let infodesc = document.querySelector(".infodesc");
 let infovideo = document.querySelector(".infovideo");
-let infovideoerror = document.querySelector(".infovideoerror");
 
 
 // API key get
@@ -16,9 +15,9 @@ var settings = {
 "timeout": 0,
 "headers": {
 "api-version": "v200",
-"Authorization": "Basic TkZNRF9YWDo5ZWhQcFA0OWNUc3M=",
+"Authorization": "Basic RkJRTV9YWDpQNDFYOXJsVWc2SGM=",
 "client": "FBQM",
-"x-api-key": "k0CpFjNQu880p6mFez3pP4MSrPzZ4rQl9ksszUfW",
+"x-api-key": "NuaczzpB8zvjbY6NwA7iaWepxEsogUi3jgsoQ74a",
 "device-datetime": "2022-09-27T12:07:57.296Z",
 "territory": "XX",
 },
@@ -38,8 +37,6 @@ function createPlaceHolders(object){
     moviecard.classList.add('movie');
     contEl.appendChild(moviecard);
 
-    // moviecard.onclick = changeInfo;
-
     var moviebox = document.createElement('div');
     moviebox.classList.add('moviebox');
     moviecard.appendChild(moviebox);
@@ -53,30 +50,10 @@ function createPlaceHolders(object){
     moviecard.appendChild(title);
 
     moviecard.style.backgroundImage="url(" + object.images.poster[1].medium.film_image + ")";
-    rating.style.backgroundImage="url(" + object.age_rating[0].age_rating_image + ")";
     title.textContent = object.film_name;
-
-    moviecard.setAttribute('id', object.film_id);
-    moviecard.onclick = funk;
-
-    function funk(){
-        // console.log(this.id);
-        // console.log(object);
-        inforating.style.backgroundImage="url(" + object.age_rating[0].age_rating_image + ")";
-        infoimg.src = object.images.poster[1].medium.film_image;
-        infotitle.textContent = object.film_name;
-        infodesc.textContent = object.synopsis_long;
-        infovideo.src = object.film_trailer;
-        
-        if(object.film_trailer === null){
-            infovideo.style.visibility = "hidden";
-        }
-
-        else{
-            infovideo.style.visibility = "visible"
-        }
-    }
+    // rating.textContent = object.;
 }
+
 
 //Not working Alert
 function notWorking(){

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie API test</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0; 
+        }
+
+        body{
+            background-color: hsl(0, 0%, 95%);
+        }
+
+        #main{
+            margin: auto;
+            width:1320px ;
+            height: 2160px;
+            background-color: hsl(0, 0%, 100%);
+        }
+
+        .placeHolders{
+            width: 400px; 
+            height:225px;
+            background-color: hsl(0, 0%, 85%);
+            display: inline;
+            float: right;
+            margin: 0 1vh 1vh 3.6vh;
+        }
+
+    </style>
+</head>
+<body>
+  
+<div id="main"> </div>
+
+<script>
+    let isDark= false;
+    var main = $("#main");
+
+
+var settings = {
+    "url": "https://api-gate2.movieglu.com/filmsNowShowing/?n=10",
+    "method": "GET",
+    "timeout": 0,
+    "headers": {
+    "api-version": "v200",
+    "Authorization": "Basic RkJRTV9YWDpQNDFYOXJsVWc2SGM=",
+    "client": "FBQM",
+    "x-api-key": "NuaczzpB8zvjbY6NwA7iaWepxEsogUi3jgsoQ74a",
+    "device-datetime": "2022-09-27T12:07:57.296Z",
+    "territory": "XX",
+    },
+    };
+    
+$.ajax(settings).done(function (response) {
+console.log(response.films);
+
+var data = response.films;
+data.forEach(createPlaceHolders);
+
+});
+
+
+
+function createPlaceHolders(object){
+
+    var div = $("<div></div>").attr("class","placeHolders");
+    var posterDiv = $("<div></div>").css({"height":"100%", 'display':'inline','float':'left'});
+    var description = $("<div></div>").css({'display':'inline','width':'62%','height':'100%','float':'right','text-align':'center','overflow' : 'scroll'});
+    var poster = $("<img></img>").attr("src",object.images.poster[1].medium.film_image).css({"height":"100%",'float': 'left','display':'inline'});
+    var title = $("<h2></h2>").text(object.film_name).css({'font-size':'100%','display':'inline'});
+    var synopsis = $("<p></p>").text(object.synopsis_long).css({'font-size': '75%', 'margin':'10px'});
+
+
+
+    posterDiv.append(poster);
+    div.append(posterDiv);
+    description.append(title);
+    description.append(synopsis);
+    div.append(description);
+    main.append(div);
+
+}
+
+
+
+</script>
+</body>
+</html>
