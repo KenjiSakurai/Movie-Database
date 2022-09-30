@@ -28,11 +28,11 @@ $.ajax(settings).done(function (response) {
 console.log(response.films);
 
 var data = response.films;
-data.forEach(createPlaceHolders);
+data.forEach(createMovie);
 
 });
 
-function createPlaceHolders(object){
+function createMovie(object){
 
     var moviecard = document.createElement('div');
     moviecard.classList.add('movie');
