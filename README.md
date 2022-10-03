@@ -3,12 +3,12 @@
 Målet med sidan var att utveckla mina kunskaper inom javascript och API samt testa tidigare kunskaper inom HTML och CSS. Jag har lagt cirka 25 timmar på skapelsen av hemsidan. Strukturen på sidan innehåller en navbar längst upp, en informationsruta i mitten, ett fält med de 10 olika filmerna under det och en footing längst ner. Headern består av loggan, tre knappar och en sökruta. Informationsrutan innhehåller filmernas namn, bild, trailer, ratign och description. Footern består av 5 olika ikoner för sociala medier och en copyright label.
 
 ## Kravspecifikation
-* **Funktionella Krav**
+* **###Funktionella Krav**
     * Hemsidan ska kunna spela upp trailers
     * Hemsidan ska kunna visa filmers betyg
     * Hemsidan ska kunna ha en random movie button
-    
-* **Icke-funktionella krav**
+
+* **###Icke-funktionella krav**
     * Användarvänlighet
         * Dark Mode funktion
         * Responsiv UI
@@ -40,5 +40,6 @@ Jag lyckades inte att skapa en knapp för språkbyte på grund av att jag fastna
 
 Sidan kunde inte visa filmernas betyg då API’n som jag använde inte hade data för det området. Eftersom att jag hade stylat sidan för att kunna visa score så valde jag att ersätta betygen med åldersgräns. Detta var inte optimalt men jag tror att det kan hjälpa besökare att få en bild av filmens innehåll och målgrupp vilket är syftet med sidan.
 
+Jag är relativt nöjd med slutprodukten men hade önskat att jag inte skulle behöva eliminera en del funktioner. Genom detta projekt har jag förbättrat mina färdigheter i javascript och Jquery, lärt mig mer om hur en API fungerar och skapat mer interaktiv css design genom transition, hover, och animations. Det finns definitivt saker att förbättra och funktiner att lägga till för en förbättrad användrarupplevelse. 
 
-Jag är relativt nöjd med slutprodukten men hade önskat att jag inte skulle behöva eliminera en del funktioner. Genom detta projekt har jag förbättrat mina färdigheter i javascript och Jquery, lärt mig mer om hur en API fungerar och skapat mer interaktiv css design genom transition, hover, och animations. Saker att förbättra tills nästa gång är att hitta en bra API med mycket information tidigt så att det inte tar flera dagar att få en nyckel. Mycket av CSS skulle även kunna bli bättre och mer användarvänlig. Hemsidan blev mycket simpel och jag hoppas att jag kan skapa något mer avancerat i framtiden.
+Saker att förbättra tills nästa gång är att hitta en bra API med mycket information tidigt så att det inte tar flera dagar att få en nyckel. Mycket av CSS skulle även kunna bli bättre och mer användarvänlig. Hemsidan blev mycket simpel och jag hoppas att jag kan skapa något mer avancerat i framtiden.
