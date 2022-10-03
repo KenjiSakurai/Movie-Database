@@ -13,6 +13,8 @@ För att hämta API’n så använde jag en get funktion med Jquery och generera
 När man klickar på de olika korten så ska informationen längst upp matcha filmen som man klickade på. Denna funktion skapade jag genom att ge korten ett onclick attribut som hämtar det unika ID som varje film har och kallar på en funktion funk().   
 Sedan hämtar den all information från endast filmen som man klickade på.
 
+![mainpage](images/Screenshot%202022-10-03%20at%2011.43.07.png)
+
 Dark-mode gjorde jag genom en toggle funktion som ändrar objektets klass till en klass med dark-mode css som ändrar background color och text color. Jag gjorde även en carousel slideshow som man skulle se på main-sidan men tog sedan bort den för att visa filmdata som namn, beskrivning, bild och trailer.
 
 Jag lyckades inte att skapa en knapp för språkbyte på grund av att jag fastnade på API delen för länge och inte hade tid att skapa knappen innan deadlinen. Sökrutan blev också inte av på grund av att API’n som jag använde endast hade 10 filmer. Jag tyckte då att det inte skulle vara nödvändigt för användaren att använda en sökruta där alla filmer redan finns på skärmen. Randomized button blev även scrapped på grund av samma anledning, både tidsbegränsningar och ett för litet antal filmer för att kunna göra funktionen användbar.  
