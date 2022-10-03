@@ -19,7 +19,7 @@ var settings = {
 "Authorization": "Basic TkZNRF9YWDo5ZWhQcFA0OWNUc3M=",
 "client": "FBQM",
 "x-api-key": "k0CpFjNQu880p6mFez3pP4MSrPzZ4rQl9ksszUfW",
-"device-datetime": "2022-09-27T12:07:57.296Z",
+"device-datetime": "2022-10-03T12:07:57.296Z",
 "territory": "XX",
 },
 };
