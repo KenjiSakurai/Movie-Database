@@ -2,6 +2,24 @@
 
 Målet med sidan var att utveckla mina kunskaper inom javascript och API samt testa tidigare kunskaper inom HTML och CSS. Jag har lagt cirka 25 timmar på skapelsen av hemsidan. Strukturen på sidan innehåller en navbar längst upp, en informationsruta i mitten, ett fält med de 10 olika filmerna under det och en footing längst ner. Headern består av loggan, tre knappar och en sökruta. Informationsrutan innhehåller filmernas namn, bild, trailer, ratign och description. Footern består av 5 olika ikoner för sociala medier och en copyright label.
 
+## Kravspecifikation
+* **Funktionella Krav**
+    * Hemsidan ska kunna spela upp trailers
+    * Hemsidan ska kunna visa filmers betyg
+    * Hemsidan ska kunna ha en random movie button
+* Icke-funktionella krav
+    * Användarvänlighet
+        * Dark Mode funktion
+        * Responsiv UI
+        * Om det finns tid, Mobilanpassad
+    * Underhållbarhet
+        * Uppdateras automatiskt med filmer från API
+    * Tillgänglighet
+        * Tillgänglig för alla gratis
+        * Beskrivande text i Alt
+        * Om det finns tid, Språkinställningar
+
+
 Jag började med att designa en grund för hemsidan och använde en color randomizer på [color-hex.com](https://www.color-hex.com/) för att välja färgtemat på sidan. Stilmässigt så valde jag att designa hemsidan simplistiskt med rundade hörn och ett matt färgtema. För att göra animerade cards som visar information så använde jag css attributet transition vilket jag har blivit mer bekant med under projektets utveckling. 
 
 För att göra animerade cards som visar information så använde jag css attributet transition vilket jag har blivit mer bekant med under projektets utveckling. 
