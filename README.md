@@ -2,7 +2,7 @@
 
 Målet med sidan var att utveckla mina kunskaper inom javascript och API samt testa tidigare kunskaper inom HTML och CSS. Jag har lagt cirka 25 timmar på skapelsen av hemsidan.
 
-Jag började med att designa en grund för hemsidan och använde en color randomizer på [color-hex.com](color-hex.com) för att välja färgtemat på sidan. Stilmässigt så valde jag att designa hemsidan simplistiskt med rundade hörn och ett matt färgtema.
+Jag började med att designa en grund för hemsidan och använde en color randomizer på [color-hex.com](https://www.color-hex.com/) för att välja färgtemat på sidan. Stilmässigt så valde jag att designa hemsidan simplistiskt med rundade hörn och ett matt färgtema.
 
 För att göra animerade cards som visar information så använde jag css attributet transition vilket jag har blivit mer bekant med under projektets utveckling. 
 
