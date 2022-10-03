@@ -3,12 +3,12 @@
 Målet med sidan var att utveckla mina kunskaper inom javascript och API samt testa tidigare kunskaper inom HTML och CSS. Jag har lagt cirka 25 timmar på skapelsen av hemsidan. Strukturen på sidan innehåller en navbar längst upp, en informationsruta i mitten, ett fält med de 10 olika filmerna under det och en footing längst ner. Headern består av loggan, tre knappar och en sökruta. Informationsrutan innhehåller filmernas namn, bild, trailer, ratign och description. Footern består av 5 olika ikoner för sociala medier och en copyright label.
 
 ## Kravspecifikation
-* **###Funktionella Krav**
+* **Funktionella Krav**
     * Hemsidan ska kunna spela upp trailers
     * Hemsidan ska kunna visa filmers betyg
     * Hemsidan ska kunna ha en random movie button
 
-* **###Icke-funktionella krav**
+* **Icke-funktionella krav**
     * Användarvänlighet
         * Dark Mode funktion
         * Responsiv UI
