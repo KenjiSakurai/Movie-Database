@@ -7,7 +7,8 @@ Målet med sidan var att utveckla mina kunskaper inom javascript och API samt te
     * Hemsidan ska kunna spela upp trailers
     * Hemsidan ska kunna visa filmers betyg
     * Hemsidan ska kunna ha en random movie button
-* Icke-funktionella krav
+    
+* **Icke-funktionella krav**
     * Användarvänlighet
         * Dark Mode funktion
         * Responsiv UI
